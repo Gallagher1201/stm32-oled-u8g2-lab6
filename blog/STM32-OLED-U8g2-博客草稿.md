@@ -1,8 +1,9 @@
 # STM32F103 驱动 0.96 寸 OLED：I2C 显示、汉字点阵与 U8g2 移植
 
-这块 0.96 寸 OLED 是四针 I2C 模块，128×64 单色，控制器按 SSD1306 处理。实验用 STM32F103C8T6 最小系统板，先在 CubeMX 生成的 HAL 框架里把 I2C、字库、滚动和图案显示跑通，再把 U8g2 裁剪后移植进来。下面按实际动手顺序记录配置、代码和踩过的坑。
+本文记录 STM32F103C8T6 通过 I2C 驱动 0.96 寸 SSD1306 OLED 的过程，包括 CubeMX 配置、汉字点阵字库、U8g2 裁剪移植、长句滚动和 XBM 动画，并说明 Keil 虚拟逻辑分析仪为什么采不到真实 I2C 波形。完整工程、报告和上板演示见文末。
 
-![上电后的姓名学号页](images/14_oled_photo.jpg)
+---
+
 
 ## 一、硬件与工具
 
@@ -393,6 +394,8 @@ Flash Load finished at 20:10:16
 这一步能验证坐标、字模和命令序列，但不能替代电气测量：它不检查 SCL/SDA 的实际电平、上升沿、ACK 时序，也不验证 OLED 控制器的批次差异。文中除实拍图外的屏幕图，都是这套软件核对生成的 128×64 渲染图，不是用手机对着屏幕逐页拍的。
 
 ![软件核对汇总：姓名、demo、滚动、图案和滚屏显存](images/13_preview_sheet.jpg)
+
+<iframe id="oledvideo-550117" frameborder="0" src="https://live.csdn.net/v/embed/550117" allowfullscreen="true" data-mediaembed="csdn"></iframe>
 
 ## 九、Keil 的逻辑分析仪能采到 I2C 吗
 
