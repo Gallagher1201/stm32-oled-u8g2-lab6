@@ -1,0 +1,16 @@
+{
+  "result": "PASS",
+  "scope": "Keil ARM binary; HAL I2C and delays mocked; not a physical OLED/I2C test",
+  "glyphs_checked": 21,
+  "long_text_width_px": 337,
+  "checks": [
+    "0x3C address",
+    "0x3D address fallback",
+    "missing OLED returns failure",
+    "all Chinese glyphs exist",
+    "horizontal negative coordinate rendering",
+    "vertical clipping preserves title",
+    "avatar animation changes",
+    "SSD1306 hardware scroll command bytes"
+  ]
+}

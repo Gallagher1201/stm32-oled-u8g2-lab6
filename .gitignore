@@ -1,0 +1,16 @@
+# Keil build output
+project/MDK-ARM/Objects/*.o
+project/MDK-ARM/Objects/*.crf
+project/MDK-ARM/Objects/*.d
+project/MDK-ARM/Objects/*.lnp
+project/MDK-ARM/Objects/*.dep
+project/MDK-ARM/Objects/*.build_log.htm
+project/MDK-ARM/Objects/*.htm
+project/MDK-ARM/Objects/*_1.d
+project/MDK-ARM/*.uvguix.*
+project/MDK-ARM/startup_stm32f103xb.lst
+
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
