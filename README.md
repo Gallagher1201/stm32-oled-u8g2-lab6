@@ -92,6 +92,7 @@ Lab6_OLED_Project.zip           完整工程压缩包
 
 - 实验报告：[report/OLED 周新城 632407030424.md](report/OLED%20周新城%20632407030424.md)、[PDF](report/OLED%20周新城%20632407030424.pdf)
 - 博客草稿：[blog/STM32-OLED-U8g2-博客草稿.md](blog/STM32-OLED-U8g2-博客草稿.md)
+- CSDN 草稿（需登录）：https://editor.csdn.net/md/?articleId=169155709
 
 ## 第三方与许可
 
